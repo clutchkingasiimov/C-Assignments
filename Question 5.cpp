@@ -7,16 +7,16 @@ int fibonacci(int value){
     int a = 0;
     int b = 1;
     int c;
-    if(value == 1){
+    if(value == 0){
         cout << a << endl;
         return 0;
     }
-    if(value == 2){
+    if(value == 1){
         cout << b << endl;
         return 0;
     }
     else{
-        for (int i = 2; i < value; i++){
+        for (int i = 2; i <= value; i++){
             c = a+b;
             a = b;
             b = c;
